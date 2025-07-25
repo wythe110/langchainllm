@@ -15,14 +15,14 @@ def main():
     
     # 创建一个提示模板
     # 模板中{question}是一个变量，后续会被实际问题替换
-    prompt = ChatPromptTemplate.from_template("请回答以下问题：{question}")
+    prompt = ChatPromptTemplate.from_template("/think 请回答以下问题：{question}")
     
     # 将提示模板和LLM模型组合成一个链
     # 链(chain)是LangChain中处理流程的基本单元，这里的链会将提示传递给LLM
     chain = prompt | llm
     
     # 定义一个问题
-    question = "什么是人工智能？请用简单易懂的语言解释"
+    question = "帮我写一个关于周末出游的日记"
     
     # 调用链来获取回答
     # invoke方法用于执行链，参数是一个字典，包含要替换的变量
@@ -35,5 +35,4 @@ def main():
 # 如果这个脚本是直接运行的（而不是被导入的），则执行main函数
 if __name__ == "__main__":
     main()
-
-#zheyang
+    
