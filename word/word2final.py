@@ -10,7 +10,7 @@ import os
 OLLAMA_HOST = "http://10.86.5.43:11434"
 
 #def process_document(file_path: r"C:\Users\jinpeng.kuang\Desktop\cy.docx", query: "帮我写一个关于周末出游的日记"):
-def process_document(file_path: str, query: str = "这篇日记的作者早上8点做了什么"):
+def process_document(file_path: str, query: str):
     """
     #处理Word文档并回答用户问题
     
