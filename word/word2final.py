@@ -57,9 +57,9 @@ def process_document(file_path: str, query: str = "这篇日记的作者早上8�
     # 7. 打印结果
     print(f"问题: {query}")
     print(f"答案: {result['result']}")
-    print("\n来源文档片段:")
-    for i, doc in enumerate(result['source_documents'][:2]):  # 显示前2个来源
-        print(f"[片段 {i+1}]: {doc.page_content[:200]}...")
+ #   print("\n来源文档片段:")
+ #   for i, doc in enumerate(result['source_documents'][:2]):  # 显示前2个来源
+ #       print(f"[片段 {i+1}]: {doc.page_content[:200]}...")
 
 if __name__ == "__main__":
     # 示例使用
