@@ -94,4 +94,4 @@ if __name__ == "__main__":
     # 示例使用 - 替换为你的PDF路径和问题
     pdf_path = r"C:\Users\jinpeng.kuang\Desktop\ocam.pdf"  # 你的PDF路径
     user_query = "简略讲一下这篇论文讲了什么呢？"  # 你的问题
-    process_pdf(pdf_path, user_query)
+process_pdf(pdf_path, user_query)
